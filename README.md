@@ -68,3 +68,4 @@ spin-wheel-pro/
 ## License
 
 MIT
+"# wheelspinsonnetwarp" 
