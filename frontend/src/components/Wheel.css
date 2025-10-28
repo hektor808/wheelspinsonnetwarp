@@ -1,0 +1,47 @@
+.wheel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.wheel-canvas {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.wheel-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 3px dashed var(--text-secondary);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.wheel-empty p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .wheel-container {
+    min-height: 350px;
+  }
+  
+  .wheel-canvas {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .wheel-empty {
+    width: 350px;
+    height: 350px;
+  }
+}
